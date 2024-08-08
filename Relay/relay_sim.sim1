@@ -1,0 +1,113 @@
+<circuit version="1.1.0-RC1" rev="2162" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Battery" CircId="Battery-37" mainComp="false" Show_id="false" Show_Val="false" Pos="276,-460" rotation="180" hflip="1" vflip="1" label="Battery-37" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="0.001 Ω" />
+
+<item itemtype="Ground" CircId="Ground-2" mainComp="false" Show_id="false" Show_Val="false" Pos="176,-68" rotation="0" hflip="1" vflip="1" label="Ground-2" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-32" mainComp="false" Show_id="false" Show_Val="false" Pos="164,-384" rotation="0" hflip="1" vflip="1" label="Ground-32" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-33" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="68,-472" rotation="0" hflip="1" vflip="1" label="Resistor-33" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Battery" CircId="Battery-8" mainComp="false" Show_id="false" Show_Val="false" Pos="288,-144" rotation="180" hflip="1" vflip="1" label="Battery-8" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="0.001 Ω" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-1" mainComp="false" Show_id="false" Show_Val="false" Pos="176,-228" rotation="90" hflip="1" vflip="1" label="RelaySPST-1" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" IOn="0.02 A" IOff="0.01 A" Inductance="0.1 H" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-36" mainComp="false" Show_id="false" Show_Val="false" Pos="120,-584" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-36" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-26" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="68,152" rotation="0" hflip="1" vflip="1" label="Resistor-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="80,-156" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-31" mainComp="false" Show_id="false" Show_Val="false" Pos="164,-544" rotation="90" hflip="1" vflip="1" label="RelaySPST-31" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" IOn="0.02 A" IOff="0.01 A" Inductance="0.1 H" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="Subcircuit" CircId="Mega-13" mainComp="false" Show_id="true" Show_Val="false" Pos="-216,-252" rotation="0" hflip="1" vflip="1" label="Mega-13" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega2560-63" Frequency="16 MHz" Program="Relay.ino.mega.hex" Auto_Load="false" saveEepr="true" SerialMon="-1" />
+</item>
+
+<item itemtype="RelaySPST" CircId="RelaySPST-24" mainComp="false" Show_id="false" Show_Val="false" Pos="164,80" rotation="90" hflip="1" vflip="1" label="RelaySPST-24" idLabPos="-16,8" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" IOn="0.02 A" IOff="0.01 A" Inductance="0.1 H" Rcoil="100 Ω" ReaStep="0 ns" />
+
+<item itemtype="BJT" CircId="BJT-34" mainComp="false" Show_id="false" Show_Val="false" Pos="156,-472" rotation="0" hflip="1" vflip="1" label="BJT-34" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Ground" CircId="Ground-25" mainComp="false" Show_id="false" Show_Val="false" Pos="164,240" rotation="0" hflip="1" vflip="1" label="Ground-25" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-29" mainComp="false" Show_id="false" Show_Val="false" Pos="120,40" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-29" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-40" mainComp="false" Show_id="true" Show_Val="false" Pos="-348,-96" rotation="0" hflip="1" vflip="1" label="bulb2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="BJT" CircId="BJT-5" mainComp="false" Show_id="false" Show_Val="false" Pos="168,-156" rotation="0" hflip="1" vflip="1" label="BJT-5" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Lamp" CircId="Lamp-35" mainComp="false" Show_id="false" Show_Val="false" Pos="340,-460" rotation="0" hflip="1" vflip="1" label="Lamp-35" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5 Ω" MaxCurrent="0.2 A" />
+
+<item itemtype="BJT" CircId="BJT-27" mainComp="false" Show_id="false" Show_Val="false" Pos="156,152" rotation="0" hflip="1" vflip="1" label="BJT-27" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Lamp" CircId="Lamp-28" mainComp="false" Show_id="false" Show_Val="false" Pos="340,164" rotation="0" hflip="1" vflip="1" label="Lamp-28" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5 Ω" MaxCurrent="0.2 A" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-41" mainComp="false" Show_id="true" Show_Val="false" Pos="-348,-28" rotation="0" hflip="1" vflip="1" label="off button" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-38" mainComp="false" Show_id="true" Show_Val="false" Pos="-348,-124" rotation="0" hflip="1" vflip="1" label="bulb1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-39" mainComp="false" Show_id="true" Show_Val="false" Pos="-348,-60" rotation="0" hflip="1" vflip="1" label="bulb3" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Lamp" CircId="Lamp-4" mainComp="false" Show_id="false" Show_Val="false" Pos="352,-144" rotation="0" hflip="1" vflip="1" label="Lamp-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5 Ω" MaxCurrent="0.2 A" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" Show_id="false" Show_Val="false" Pos="132,-268" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-6" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Battery" CircId="Battery-30" mainComp="false" Show_id="false" Show_Val="false" Pos="276,164" rotation="180" hflip="1" vflip="1" label="Battery-30" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="5 V" Resistance="0.001 Ω" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Lamp-35-rPin" endpinid="RelaySPST-31-pinP2" pointList="356,-460,356,-672,180,-672,180,-560" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Resistor-26-rPin" endpinid="BJT-27-base" pointList="84,152,140,152" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="Fixed Voltage-40-outnod" endpinid="Mega-13-3" pointList="-332,-96,-264,-96,-264,-108,-208,-108" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Resistor-3-lPin" endpinid="Mega-13-7" pointList="64,-156,-8,-156,-8,-76,-208,-76" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="Fixed Voltage-38-outnod" endpinid="Mega-13-2" pointList="-332,-124,-244,-124,-244,-116,-208,-116" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-6-outnod" endpinid="RelaySPST-1-inductor-lPin" pointList="148,-268,176,-268,176,-244" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Lamp-28-rPin" endpinid="RelaySPST-24-pinP2" pointList="356,164,356,-48,180,-48,180,64" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="BJT-34-emiter" endpinid="Ground-32-Gnd" pointList="164,-456,164,-400" />
+
+<item itemtype="Connector" uid="Connector-55" startpinid="RelaySPST-31-switch0pinN" endpinid="Battery-37-rPin" pointList="180,-528,180,-460,260,-460" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Fixed Voltage-41-outnod" endpinid="Mega-13-5" pointList="-332,-28,-236,-28,-236,-92,-208,-92" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Resistor-33-lPin" endpinid="Mega-13-6" pointList="52,-472,52,-84,-208,-84" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="Battery-37-lPin" endpinid="Lamp-35-lPin" pointList="292,-460,324,-460" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="BJT-34-collector" endpinid="RelaySPST-31-inductor-rPin" pointList="164,-488,164,-528" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Lamp-4-rPin" endpinid="RelaySPST-1-pinP2" pointList="368,-144,368,-356,192,-356,192,-244" />
+
+<item itemtype="Connector" uid="Connector-49" startpinid="BJT-27-collector" endpinid="RelaySPST-24-inductor-rPin" pointList="164,136,164,96" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Battery-8-lPin" endpinid="Lamp-4-lPin" pointList="304,-144,336,-144" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="Battery-30-lPin" endpinid="Lamp-28-lPin" pointList="292,164,324,164" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Fixed Voltage-29-outnod" endpinid="RelaySPST-24-inductor-lPin" pointList="136,40,164,40,164,64" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="Fixed Voltage-39-outnod" endpinid="Mega-13-4" pointList="-332,-60,-252,-60,-252,-100,-208,-100" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="BJT-27-emiter" endpinid="Ground-25-Gnd" pointList="164,168,164,224" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="RelaySPST-1-switch0pinN" endpinid="Battery-8-rPin" pointList="192,-212,192,-144,272,-144" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="Resistor-33-rPin" endpinid="BJT-34-base" pointList="84,-472,140,-472" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="BJT-5-emiter" endpinid="Ground-2-Gnd" pointList="176,-140,176,-84" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="RelaySPST-24-switch0pinN" endpinid="Battery-30-rPin" pointList="180,96,180,164,260,164" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Resistor-3-rPin" endpinid="BJT-5-base" pointList="96,-156,152,-156" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="BJT-5-collector" endpinid="RelaySPST-1-inductor-rPin" pointList="176,-172,176,-212" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="Resistor-26-lPin" endpinid="Mega-13-8" pointList="52,152,52,-44,-208,-44,-208,-60" />
+
+<item itemtype="Connector" uid="Connector-54" startpinid="Fixed Voltage-36-outnod" endpinid="RelaySPST-31-inductor-lPin" pointList="136,-584,164,-584,164,-560" />
+
+</circuit>

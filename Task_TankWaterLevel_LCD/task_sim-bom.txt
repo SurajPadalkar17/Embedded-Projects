@@ -1,0 +1,12 @@
+
+Circuit: task_sim.simu
+
+Bill of Materials:
+
+AudioOut-325 : AudioOut   
+Hd44780-1 : Hd44780   
+Led-318 : Led   
+Led-320 : Led   
+Led-680 : Led   
+Mega-3 : Mega   
+Resistor-321 : Resistor 100 Ω

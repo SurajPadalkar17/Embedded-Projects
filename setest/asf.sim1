@@ -1,0 +1,37 @@
+<circuit version="1.1.0-RC1" rev="2162" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="L298P-7" mainComp="false" Show_id="true" Show_Val="false" Pos="-288,-96" rotation="0" hflip="1" vflip="1" label="L298P-7" idLabPos="0,-23.9329" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" Logic_Symbol="true" />
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-220,-116" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="5.89933,-13.1175" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="../../../OneDrive/Desktop/setest/setest.ino.standard.hex" Auto_Load="false" saveEepr="true" SerialMon="1" />
+</item>
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-312,-20" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-12" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,4" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-10" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="12 V" Out="true" />
+
+<item itemtype="DcMotor" CircId="DcMotor-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-292,92" rotation="0" hflip="1" vflip="1" label="DcMotor-4" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="500 _RPM" Volt_Nominal="12 V" Resistance="100 Ω" />
+
+<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-248,-32" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Node-15-2" endpinid="L298P-7-SenB" pointList="-248,-32,-248,-32" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="L298P-7-IN1" endpinid="Uno-1-2" pointList="-296,-88,-212,-88,-212,-84" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="L298P-7-Vs" endpinid="Fixed Voltage-10-outnod" pointList="-248,-48,-240,-48,-240,4,-272,4" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Uno-1-4" endpinid="L298P-7-IN2" pointList="-212,-68,-296,-68,-296,-80" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="L298P-7-SenA" endpinid="Node-15-0" pointList="-248,-40,-248,-32" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Fixed Voltage-12-outnod" endpinid="Node-15-1" pointList="-296,-20,-248,-20,-248,-32" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="L298P-7-OUT1" endpinid="DcMotor-4-lPin" pointList="-248,-88,-236,-88,-236,24,-332,24,-332,92" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="L298P-7-EnB" endpinid="Uno-1-6" pointList="-296,-40,-212,-40,-212,-52" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="L298P-7-EnA" endpinid="Uno-1-5" pointList="-296,-48,-296,-60,-212,-60" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="L298P-7-OUT2" endpinid="DcMotor-4-rPin" pointList="-248,-80,-228,-80,-228,92,-252,92" />
+
+</circuit>
