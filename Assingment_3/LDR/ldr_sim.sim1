@@ -1,0 +1,25 @@
+<circuit version="1.1.0-RC1" rev="2162" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="200,120" rotation="-90" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Subcircuit" CircId="Mega-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-44,-160" rotation="0" hflip="1" vflip="1" label="Mega-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega2560-63" Frequency="16 MHz" Program="../../../OneDrive/Desktop/Lecture/Assingment_3/LDR/LDR.ino.mega.hex" Auto_Load="false" saveEepr="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="208,188" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="LDR" CircId="LDR-3" mainComp="false" Show_id="false" Show_Val="false" Pos="200,24" rotation="90" hflip="-1" vflip="1" label="LDR-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,30" valLabRot="0" Lux="1000 Lux" Min_Lux="1e-12 Lux" Max_Lux="1000 Lux" Dial_Step="0 Lux" Gamma="0.8582" R1="127410 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="200,68" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Mega-1-5V00" endpinid="LDR-3-lPin" pointList="108,48,144,48,144,-4,200,-4,200,8" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Mega-1-A0" endpinid="Node-8-1" pointList="108,8,156,8,156,68,200,68" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="LDR-3-rPin" endpinid="Node-8-0" pointList="200,40,200,68" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Resistor-4-lPin" endpinid="Ground-5-Gnd" pointList="200,136,200,172,208,172" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Node-8-2" endpinid="Resistor-4-rPin" pointList="200,68,200,104" />
+
+</circuit>
